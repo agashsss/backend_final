@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+<body>
+<div class="header">
+    <input type="checkbox" id="check">
+    <nav>
+        <a href="home"><div class="icon">PaperPlane</div></a>
+        <div class="search_box">
+            <input type="search" placeholder="Search here">
+            <span class="fa fa-search"></span>
+        </div>
+        <ol>
+            <li><a class="home" href="home">home</a></li>
+            <li><a class="categories" href="categories">categories</a></li>
+            <li><a class="contact" href="contact">contact</a></li>
+            <li><a class="login" href="login">login</a></li>
+            <li><a class="sign_up" href="sign_up">sign up</a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+</div>
+
+<div class="sign_up_block">
+    <div class="split-screen">
+        <div class="left">
+            <section class="copy">
+                <h1>Pridumai krutuyu nadpis'</h1>
+                <p>Tvoya popytka v UX ubivaet UI</p>
+            </section>
+        </div>
+
+        <div class="right">
+            <form action="">
+                <section class="copy">
+                    <h2>Log in</h2>
+                    <div class="login-container">
+                        <p>Don't have an account? <a href="sign_up"><strong>Sign up</strong></a></p>
+                    </div>
+                </section>
+
+                <div class="input-container email">
+                    <label for="email">username</label>
+                    <input id="username" name="username" type="username">
+                </div>
+
+                <div class="input-container password">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" placeholder="Password" type="password">
+                    <i class="far fa-eye-slash"></i>
+                </div>
+                <button class="signup-btn" type="submit" id="loginbtn">Log in</button>
+                <section class="copy legal">
+                    <p><span class="small">By continuing, you agree to accept <br><a href="privacy_policy"> Privacy Policy</a> &amp; <a href="terms_of_service">Terms of Service</a>.</span></p>
+                </section>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body {
+	background-color: $color_2;
+}
+
+.blockwrapper {
+	.block {
+		margin: 0 calc(1px + 119 * (100vw/1920));
+	}
+}

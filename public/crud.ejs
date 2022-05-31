@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRUD PANEL</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/crud_panel.css">
+	<script src="https://kit.fontawesome.com/61301b1836.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="tabs">
+		<div class="tabs__nav">
+		  <button class="tabs__btn tabs__btn_active">Get all 1</button>
+		  <button class="tabs__btn">Get by id 2</button>
+		  <button class="tabs__btn">Create user 3</button>
+		  <button class="tabs__btn">Update user 4</button>
+		  <button class="tabs__btn">Delete user 5</button>
+		</div>
+
+		<div class="tabs__content">
+		  <div class="tabs__pane tabs__pane_show">
+			<div class="wrapper container_fluid">
+				<div class="getall_row row">
+					<div class="col-6">
+						<h3>GET ALL USERS </h3>
+						  <form action="">
+							  <button class="GETALL_btn" id="GET_ALL"> GET ALL</button>
+						  </form>
+					</div>
+				</div>
+
+				<div class="users row"></div>
+
+			</div>
+		  </div>
+		
+		  <div class="tabs__pane">
+			 <div class="wrapper container_fluid">
+				 <div class="getbyid_row row">
+					 <div class="col-6">
+						<form action="" id="getbyid_form">
+						
+							<label for="id">
+								ID:
+								<input type="text" name="id" id="input_id">
+							</label>
+							<button class="getbyid_btn" id="get_by_id">Get</button>
+						</form>
+					 </div>
+					
+					<div class="gotten_user row">
+						
+					</div> 
+					
+				 </div>
+			 </div>
+		  </div>
+		
+		  <div class="tabs__pane" id="content-3">
+			<div class="wrapper container_fluid">
+				<div class="create_row row">
+					<div class="col-6">
+						<h3>Create user</h3>
+						  <form action="http://localhost:4000/create" id="create_form">
+									<label for="email">Email:
+										<input type="text" name="email" id="email">
+							 		</label>
+									 <br>
+									<label for="first-name">First name:
+									  <input type="text" name="first_name" id="first-name">
+									</label>
+									<br>
+									<label for="last-name">Last name:
+										<input type="text" name="last_name" id="last-name">
+									 </label>
+									 <br>
+									 <label for="phone">Phone:
+										<input type="text" name="phone" id="phone">
+									 </label>
+							  <br>
+							  <button id="create">create</button>
+						  </form>
+
+						  <div class="created row">
+									<div class="created__">
+
+									</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		
+		  <div class="tabs__pane" id="content-4">
+			<div class="wrapper container_fluid">
+				<div class="updatebyid_row row">
+					<div class="col-6">
+						<h3>Update user by ID: </h3>
+						<form action="http://localhost:4000/update" id="create_form">
+							<label for="id">id:
+								<input type="text"  id="u_id">
+							</label>
+							<br>
+							<label for="email">Email:
+								<input type="text" name="email" id="u_email">
+							 </label>
+							 <br>
+							<label for="first-name">First name:
+							  <input type="text" name="first_name" id="u_first-name">
+							</label>
+							<br>
+							<label for="last-name">Last name:
+								<input type="text" name="last_name" id="u_last-name">
+							 </label>
+							 <br>
+							 <label for="phone">Phone:
+								<input type="text" name="phone" id="u_phone">
+							 </label>
+					  <br>
+					  <button id="update">update</button>
+				  </form>
+
+				  <div class="updated_u row">
+							<div class="updated">
+
+							</div>
+				  </div>
+					</div>
+				</div>
+			</div>
+		 </div>
+		
+		 <div class="tabs__pane" id="content-5">
+			<div class="wrapper container_fluid">
+				<div class="deletebyid_row row">
+					<div class="col-6">
+						<form action="" id="deletebyid_form">
+						
+							<label for="id">
+								ID:
+								<input type="text" name="id" id="delete_id">
+							</label>
+							<button class="getbyid_btn" id="delete">DELETE</button>
+						</form>
+						<div class="delete"></div>
+					 </div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	 </div>
+
+	 <script src="js/crud_panel.js"></script>
+</body>
+</html>
